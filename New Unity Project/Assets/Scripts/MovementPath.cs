@@ -31,7 +31,7 @@ public class MovementPath : MonoBehaviour
         //loop through the array and draw line between all array positions
         for (int i = 0; i < pathArr.Length; i++)
         {
-            Gizmos.DrawLine(pathArr[i - 1].position, pathArr[i].position);
+            Gizmos.DrawLine(pathArr[i].position, pathArr[i].position);
         }
     }
     public IEnumerator<Transform> GetNextPoint()
@@ -69,5 +69,9 @@ public class MovementPath : MonoBehaviour
             moveTo = moveTo + moveDir;
             
         }
+    }
+    public Transform[] GetTransformArr()
+    {
+        return pathArr;
     }
 }
