@@ -54,6 +54,28 @@ namespace Tests
             yield return new WaitForSeconds(0.1f);
             Assert.Equals(platform.transform.position.x, path[1].transform.position.x);
         }
+        [UnityTest]
+        public IEnumerator PlatformReachesSecondPoint()
+        {
+            GameObject platform = game.GetPlatform().gameObject;
+
+            Transform[] path = game.getTransformArr();
+            float initialXPos = platform.transform.position.x;
+            //wait for 0.1 sec and assert that the x pos is greater
+            yield return new WaitForSeconds(0.1f);
+            Assert.Equals(platform.transform.position.x, path[2].transform.position.x);
+        }
+        [UnityTest]
+        public IEnumerator PlatformReachesThirdPoint()
+        {
+            GameObject platform = game.GetPlatform().gameObject;
+
+            Transform[] path = game.getTransformArr();
+            float initialXPos = platform.transform.position.x;
+            //wait for 0.1 sec and assert that the x pos is greater
+            yield return new WaitForSeconds(0.1f);
+            Assert.Equals(platform.transform.position.x, path[3].transform.position.x);
+        }
 
     }
 }

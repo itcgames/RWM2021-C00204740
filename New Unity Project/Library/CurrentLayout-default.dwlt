@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 471}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 471}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 911, y: 442}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 908, y: 421}
+  m_MaxSize: {x: 22003, y: 10021}
   vertical: 1
-  controlID: 43
+  controlID: 42
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 957
-  m_MinSize: {x: 911, y: 442}
-  m_MaxSize: {x: 22006, y: 10021}
+  m_MinSize: {x: 908, y: 421}
+  m_MaxSize: {x: 22003, y: 10021}
   vertical: 0
-  controlID: 44
+  controlID: 43
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 952
     height: 957
-  m_MinSize: {x: 201, y: 442}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 201, y: 421}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 45
+  controlID: 44
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,8 +214,8 @@ MonoBehaviour:
     y: 494
     width: 952
     height: 463
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 219
     height: 957
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 486
     height: 957
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -444,7 +444,7 @@ MonoBehaviour:
     height: 473
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 159
+    ID: 505
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: 2e01000065000000
@@ -465,7 +465,7 @@ MonoBehaviour:
       name: New Unity Project
       fullName: New Unity Project
       resultStatus: 2
-      duration: 0.1917042
+      duration: 0.1651673
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -481,7 +481,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: D:/Users/dave2/Desktop/RWM-P1-C00204740/New Unity Project/Library/ScriptAssemblies/Tests.dll
       resultStatus: 2
-      duration: 0.1520374
+      duration: 0.1338108
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -497,7 +497,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 2
-      duration: 0.1360562
+      duration: 0.1190444
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -513,7 +513,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests.Tests
       resultStatus: 2
-      duration: 0.1271904
+      duration: 0.1082766
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -529,18 +529,19 @@ MonoBehaviour:
       name: PlatformMovesRight
       fullName: Tests.Tests.PlatformMovesRight
       resultStatus: 2
-      duration: 0.049284
-      messages: 'Unhandled log message: ''[Exception] UnityException: Transform child
-        out of bounds''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'UnityException: Transform child out of bounds
+      duration: 0.0485406
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
 '
-      stacktrace: 'ObstacleGenerator.SpawnObstacle () (at Assets/Scripts/ObstacleGenerator.cs:27)
+      stacktrace: 'PlatformController.Start () (at Assets/Scripts/PlatformController.cs:36)
 
-        ObstacleGenerator.Start
-        () (at Assets/Scripts/ObstacleGenerator.cs:20)
-
-
+        
 
 '
       notRunnable: 0
@@ -556,18 +557,19 @@ MonoBehaviour:
       name: PlatformReachesPoint
       fullName: Tests.Tests.PlatformReachesPoint
       resultStatus: 2
-      duration: 0.0394663
-      messages: 'Unhandled log message: ''[Exception] UnityException: Transform child
-        out of bounds''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'UnityException: Transform child out of bounds
+      duration: 0.0091213
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
 '
-      stacktrace: 'ObstacleGenerator.SpawnObstacle () (at Assets/Scripts/ObstacleGenerator.cs:27)
+      stacktrace: 'PlatformController.Start () (at Assets/Scripts/PlatformController.cs:36)
 
-        ObstacleGenerator.Start
-        () (at Assets/Scripts/ObstacleGenerator.cs:20)
-
-
+        
 
 '
       notRunnable: 0
@@ -578,23 +580,80 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][suite]
+    - id: 1015
+      uniqueId: Tests.dll/Tests/Tests/[Tests][Tests.Tests.PlatformReachesSecondPoint]
+      name: PlatformReachesSecondPoint
+      fullName: Tests.Tests.PlatformReachesSecondPoint
+      resultStatus: 2
+      duration: 0.008011
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+'
+      stacktrace: 'PlatformController.Start () (at Assets/Scripts/PlatformController.cs:36)
+
+        
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/Tests/[Tests][suite]
+    - id: 1016
+      uniqueId: Tests.dll/Tests/Tests/[Tests][Tests.Tests.PlatformReachesThirdPoint]
+      name: PlatformReachesThirdPoint
+      fullName: Tests.Tests.PlatformReachesThirdPoint
+      resultStatus: 2
+      duration: 0.0081593
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+'
+      stacktrace: 'PlatformController.Start () (at Assets/Scripts/PlatformController.cs:36)
+
+        
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1011
+      parentUniqueId: Tests.dll/Tests/[Tests][suite]
     - id: 1003
       uniqueId: Tests.dll/Tests/Tests/[Tests][Tests.Tests.PlayerOnPlatform]
       name: PlayerOnPlatform
       fullName: Tests.Tests.PlayerOnPlatform
       resultStatus: 2
-      duration: 0.0142953
-      messages: 'Unhandled log message: ''[Exception] UnityException: Transform child
-        out of bounds''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'UnityException: Transform child out of bounds
+      duration: 0.0079483
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
 
 '
-      stacktrace: 'ObstacleGenerator.SpawnObstacle () (at Assets/Scripts/ObstacleGenerator.cs:27)
+      stacktrace: 'PlatformController.Start () (at Assets/Scripts/PlatformController.cs:36)
 
-        ObstacleGenerator.Start
-        () (at Assets/Scripts/ObstacleGenerator.cs:20)
-
-
+        
 
 '
       notRunnable: 0
@@ -610,26 +669,24 @@ MonoBehaviour:
       ---
 
       Unhandled log message:
-      ''[Exception] UnityException: Transform child out of bounds''. Use UnityEngine.TestTools.LogAssert.Expect
+      ''[Exception] NullReferenceException: Object reference not set to an instance
+      of an object''. Use UnityEngine.TestTools.LogAssert.Expect
 
       ---
 
-      ObstacleGenerator.SpawnObstacle
-      () (at Assets/Scripts/ObstacleGenerator.cs:27)
-
-      ObstacleGenerator.Start
-      () (at Assets/Scripts/ObstacleGenerator.cs:20)
+      PlatformController.Start
+      () (at Assets/Scripts/PlatformController.cs:36)
 
       ---
 
-      UnityException:
-      Transform child out of bounds'
-    m_ResultStacktrace: 'ObstacleGenerator.SpawnObstacle () (at Assets/Scripts/ObstacleGenerator.cs:27)
+      NullReferenceException:
+      Object reference not set to an instance of an object
 
-      ObstacleGenerator.Start
-      () (at Assets/Scripts/ObstacleGenerator.cs:20)
+      NullReferenceException:
+      Object reference not set to an instance of an object'
+    m_ResultStacktrace: 'PlatformController.Start () (at Assets/Scripts/PlatformController.cs:36)
 
-
+      
 
 '
     m_TestListState:
@@ -749,9 +806,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.091139, y: 0.22666943, z: -0.24414062}
+    m_Target: {x: 5.77, y: 0.09540123, z: 0}
     speed: 2
-    m_Value: {x: 9.091139, y: 0.22666943, z: -0.24414062}
+    m_Value: {x: 5.7700057, y: 0.09540145, z: -0.00000042200554}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -801,9 +858,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.5638325
+    m_Target: 1.4807161
     speed: 2
-    m_Value: 3.410366
+    m_Value: 1.48072
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -878,9 +935,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3e3f0000
-    m_LastClickedID: 16190
-    m_ExpandedIDs: 00000000363f00003a3f0000
+    m_SelectedIDs: 5e340000
+    m_LastClickedID: 13406
+    m_ExpandedIDs: 00000000563400005a340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -908,7 +965,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000363f0000
+    m_ExpandedIDs: 0000000056340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -952,7 +1009,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1019,23 +1076,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e4e1ffff
-      m_LastClickedID: -7708
-      m_ExpandedIDs: 02ebffffdcecffff
+      m_SelectedIDs: 5ef4ffff
+      m_LastClickedID: -2978
+      m_ExpandedIDs: 6ef4ffff72f4ffff94f4ffffb2f6ffff80f7ffffa2f7ffff20f9ffff66fbffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Path
-        m_OriginalName: Path
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -7698
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 
