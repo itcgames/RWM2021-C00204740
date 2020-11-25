@@ -9,10 +9,13 @@ public class PlatformController : MonoBehaviour
         moveTowardsPoint,
         rotatePlatform
     }
+    Quaternion startRotation;
+    bool beginRotation;
     public MoveType moveType = MoveType.moveTowardsPoint;
     public MovementPath path;
     //object speed
     public float speed;
+    public float rotationSpeed;
     public GameObject player;
     public float distanceToPoint;
     private IEnumerator<Transform> pointInPath;
@@ -21,12 +24,14 @@ public class PlatformController : MonoBehaviour
     {
         playerOnPlat = false;
         speed = 2.0f;
+        rotationSpeed = 0.5f;
         //how close to point has it to be to be considered at point
         distanceToPoint = 0.1f;
         pointInPath = path.GetNextPoint();
         //get the next point to move to
         pointInPath.MoveNext();
-
+        startRotation = transform.rotation;
+        beginRotation = false;
         if (pointInPath == null)
         {
 
@@ -54,13 +59,23 @@ public class PlatformController : MonoBehaviour
         }
 
     }
-    public void PlatformRotation()
+    IEnumerator PlatformRotation()
     {
-        if(moveType == MoveType.rotatePlatform)
+        yield return new WaitForSeconds(0.3f);
+        if (moveType == MoveType.rotatePlatform)
         {
-            if(playerOnPlat == true)
+            if(playerOnPlat == true && transform.rotation == startRotation)
             {
-                
+                beginRotation = true;
+            }
+            if (transform.rotation == startRotation && beginRotation == true && playerOnPlat == false;)
+            {
+                transform.rotation = startRotation;
+                beginRotation = false;
+            }
+            if (beginRotation == true)
+            {
+                transform.Rotate(new Vector3(0, speed * Time.deltaTime, 0));
             }
         }
     }

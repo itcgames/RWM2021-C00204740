@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\MovementPath.cs" />
     <Compile Include="Assets\Scripts\ObstacleGenerator.cs" />
     <Compile Include="Assets\Scripts\PlatformController.cs" />
+    <Compile Include="Assets\Scripts\PlatformSpwner.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PointGeneration.cs" />
     <None Include="Assets\Scripts\Scripts.asmdef" />
