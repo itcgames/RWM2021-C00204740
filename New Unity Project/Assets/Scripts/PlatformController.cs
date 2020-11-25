@@ -56,7 +56,13 @@ public class PlatformController : MonoBehaviour
     }
     public void PlatformRotation()
     {
-
+        if(moveType == MoveType.rotatePlatform)
+        {
+            if(playerOnPlat == true)
+            {
+                
+            }
+        }
     }
     public void MoveTowards()
     {
