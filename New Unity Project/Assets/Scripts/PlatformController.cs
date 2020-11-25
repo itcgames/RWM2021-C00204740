@@ -6,7 +6,8 @@ public class PlatformController : MonoBehaviour
 {
     public enum MoveType
     {
-        moveTowardsPoint
+        moveTowardsPoint,
+        rotatePlatform
     }
     public MoveType moveType = MoveType.moveTowardsPoint;
     public MovementPath path;
@@ -42,8 +43,25 @@ public class PlatformController : MonoBehaviour
         {
             return;
         }
+        //The movement type is a move towards then call move towards function
+        if (moveType == MoveType.moveTowardsPoint)
+        { 
+            MoveTowards();
+        }
+        if (moveType == MoveType.rotatePlatform)
+        {
+            PlatformRotation();
+        }
+
+    }
+    public void PlatformRotation()
+    {
+
+    }
+    public void MoveTowards()
+    {
         //check if the movement type is a movetowards
-        if(moveType == MoveType.moveTowardsPoint )
+        if (moveType == MoveType.moveTowardsPoint)
         {
             //using the move towards function then move to next point in path
             transform.position = Vector3.MoveTowards(transform.position, pointInPath.Current.position
@@ -51,12 +69,10 @@ public class PlatformController : MonoBehaviour
         }
         //check if the platform is close to the point and if so move to the next
         float distaneSq = (transform.position - pointInPath.Current.position).sqrMagnitude;
-        if(distaneSq < distanceToPoint * distanceToPoint)
+        if (distaneSq < distanceToPoint * distanceToPoint)
         {
             pointInPath.MoveNext();
         }
-       
-      
     }
     public bool getPlayerOnPlatform()
     {
