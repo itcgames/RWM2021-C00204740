@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42361563dcffdc44a456f9c5a895006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 5631341979151396900, guid: 23b89bdba5fd19546ae777103be40702,
+    type: 3}
   yOffset: 0
   totalObstacleNumber: 0
 --- !u!1 &7976413783360139766

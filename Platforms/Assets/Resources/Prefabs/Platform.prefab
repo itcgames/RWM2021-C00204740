@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 0
-  path: {fileID: 0}
+  path: {fileID: 7976413783073524144, guid: 209cb21483843494d9c5189900a8c3ee, type: 3}
   speed: 0
   rotationSpeed: 0
   player: {fileID: 0}

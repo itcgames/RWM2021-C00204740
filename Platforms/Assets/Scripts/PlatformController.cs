@@ -42,6 +42,10 @@ public class PlatformController : MonoBehaviour
         //set the platform position to the first point
         transform.position = pointInPath.Current.position;
     }
+    public void setType()
+    {
+        moveType = MoveType.moveTowardsPoint;
+    }
     public MoveType getType()
     {
         return moveType;
