@@ -4,28 +4,19 @@ using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour
 {
-    enum MoveType { };
-    GameObject platform;
-    private IEnumerator<Transform> platformSpwanPoints;
-    public Paths path;
-    public PlatformController plat;
-    MoveType moveType;
-    Transform child;
+    public GameObject platform;
     private int platformNumber;
     public int totalPlatformNumber;
+    Transform child;
     public void Start()
     {
-
-        
-       
-        //get the next point to move to
        
         platformNumber = 0;
-        totalPlatformNumber = 3;
+        totalPlatformNumber = 4;
         for (int i = 0; i < totalPlatformNumber; i++)
         {
-            platformNumber++;
             spawnPlatform();
+            platformNumber++;
         }
     }
 

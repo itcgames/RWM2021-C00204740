@@ -35,12 +35,11 @@ public class PlatformController : MonoBehaviour
         beginRotation = false;
         if (pointInPath == null)
         {
-
             Debug.Log("Path needs points");
             return;
         }
         //set the platform position to the first point
-        transform.position = pointInPath.Current.position;
+        //transform.position = pointInPath.Current.position;
     }
     public void setType()
     {
@@ -118,7 +117,10 @@ public class PlatformController : MonoBehaviour
             Renderer render = GetComponent<Renderer>();
             render.material.color = Color.green;
             playerOnPlat = true;
-            collision.transform.SetParent(transform);
+            if (moveType == MoveType.moveTowardsPoint)
+            {
+                collision.transform.SetParent(transform);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
