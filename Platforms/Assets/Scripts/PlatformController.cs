@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum MoveType
+{
+    moveTowardsPoint,
+    rotatePlatform
+}
 public class PlatformController : MonoBehaviour
 {
     //Controller for the platform
-    public enum MoveType
-    {
-        moveTowardsPoint,
-        rotatePlatform
-    }
     Quaternion startRotation;
     bool beginRotation;
     public MoveType moveType = MoveType.moveTowardsPoint;
+    int movementType = 0;
     public Paths path;
     //object speed
     public float speed;
@@ -45,9 +45,9 @@ public class PlatformController : MonoBehaviour
     {
         moveType = MoveType.moveTowardsPoint;
     }
-    public MoveType getType()
+    public int getType()
     {
-        return moveType;
+        return movementType;
     }
     void Update()
     {
@@ -59,10 +59,13 @@ public class PlatformController : MonoBehaviour
         //The movement type is a move towards then call move towards function
         if (moveType == MoveType.moveTowardsPoint)
         {
+            movementType = 1;
             MoveTowards();
+           
         }
         if (moveType == MoveType.rotatePlatform)
         {
+            movementType = 2;
             PlatformRotation();
         }
 
@@ -92,6 +95,7 @@ public class PlatformController : MonoBehaviour
     }
     public void MoveTowards()
     {
+        transform.Translate(-Vector3.right * Time.deltaTime * speed);
         //check if the movement type is a movetowards
         if (moveType == MoveType.moveTowardsPoint)
         {

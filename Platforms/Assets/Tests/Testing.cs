@@ -26,12 +26,13 @@ public class Testing
     public IEnumerator PlatformMovesRight()
     {
         GameObject platform = game.GetPlatform().gameObject;
-        GameObject path = game.GetPoints().gameObject;
+        //GameObject path = game.GetPoints().gameObject;
         float initialXPos = platform.transform.position.x;
+       
         //wait for 0.1 sec and assert that the x pos is greater
         yield return new WaitForSeconds(0.1f);
-        game.GetPoints().GetNextPoint();
-        game.GetPlatform().setType();
+        //game.GetPoints().GetNextPoint();
+        //game.GetPlatform().setType();
         game.GetPlatform().MoveTowards();
         Assert.Greater(platform.transform.position.x, initialXPos);
     }
@@ -39,11 +40,10 @@ public class Testing
     public IEnumerator PlayerOnPlatform()
     {
         GameObject platform = game.GetPlatform().gameObject;
-
-        ////wait for 0.1 sec and assert that the x pos is greater
-        //yield return new WaitForSeconds(0.1f);
-        //Assert.Greater(platform.transform.position.x, initialXPos);
-        yield return new WaitForSeconds(0.1f);
+        GameObject player = game.GetPlayer().gameObject;
+        bool playerOnPlatform = game.GetPlatform().getPlayerOnPlatform();
+        yield return new WaitForSeconds(0.5f);
+        Assert.True(playerOnPlatform, "Player Not On Plat");
     }
     [UnityTest]
     public IEnumerator PlatformReachesPoint()

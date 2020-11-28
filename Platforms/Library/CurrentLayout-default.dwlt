@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 908, y: 442}
-  m_MaxSize: {x: 22003, y: 10021}
+  m_MinSize: {x: 911, y: 442}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 1
-  controlID: 165
+  controlID: 85
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 957
-  m_MinSize: {x: 908, y: 442}
-  m_MaxSize: {x: 22003, y: 10021}
+  m_MinSize: {x: 911, y: 442}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 166
+  controlID: 86
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 74
+  controlID: 36
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,7 +185,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 689
-    height: 478
+    height: 459
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
@@ -211,9 +211,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 478
+    y: 459
     width: 689
-    height: 479
+    height: 498
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -267,8 +267,8 @@ MonoBehaviour:
     y: 0
     width: 368
     height: 957
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 555
     height: 957
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -324,7 +324,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 688
-    height: 457
+    height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -371,9 +371,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 688
-      height: 436
+      height: 417
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 344, y: 218}
+    m_Translation: {x: 344, y: 208.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -381,12 +381,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -344
-      y: -218
+      y: -208.5
       width: 688
-      height: 436
+      height: 417
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 688, y: 457}
+  m_LastWindowPixelSize: {x: 688, y: 438}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -440,20 +440,20 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 689
-    height: 457
+    width: 688
+    height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 172
+    ID: 843
     splitterInitialOffset: 0
     currentActiveSplitter: -1
-    realSizes: 2201000061000000
+    realSizes: 140100005c000000
     relativeSizes:
     - 0.75
     - 0.25
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 387
+    lastTotalSize: 368
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -464,8 +464,8 @@ MonoBehaviour:
       uniqueId: '[Platforms][suite]'
       name: Platforms
       fullName: Platforms
-      resultStatus: 2
-      duration: 0.7723014
+      resultStatus: 0
+      duration: 0.210361
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -480,8 +480,8 @@ MonoBehaviour:
       uniqueId: '[Tests][D:/Users/dave2/Desktop/New folder (3)/RWM2021-C00204740/Platforms/Library/ScriptAssemblies/Tests.dll][suite]'
       name: Tests.dll
       fullName: D:/Users/dave2/Desktop/New folder (3)/RWM2021-C00204740/Platforms/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 0.7400306
+      resultStatus: 0
+      duration: 0.1765942
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -496,8 +496,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][Testing][suite]
       name: Testing
       fullName: Testing
-      resultStatus: 2
-      duration: 0.719872
+      resultStatus: 0
+      duration: 0.1579129
       messages: One or more child tests had errors
       output: 
       stacktrace: 
@@ -512,16 +512,23 @@ MonoBehaviour:
       uniqueId: Tests.dll/Testing/[Tests][Testing.PlatformMovesRight]
       name: PlatformMovesRight
       fullName: Testing.PlatformMovesRight
-      resultStatus: 2
-      duration: 0.192624
-      messages: "  Expected: greater than -1.69000006f\r\n  But was:  -1.69000006f\r\n"
-      output: 
-      stacktrace: 'at Testing+<PlatformMovesRight>d__3.MoveNext () [0x000d3] in D:\Users\dave2\Desktop\New
-        folder (3)\RWM2021-C00204740\Platforms\Assets\Tests\Testing.cs:36
+      resultStatus: 0
+      duration: 0.0622582
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
 
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-        in D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+        NullReferenceException: Object reference not
+        set to an instance of an object
+
+'
+      stacktrace: 'PlayerController.FixedUpdate () (at Assets/Scripts/PlayerController.cs:17)
+
+
 
 '
       notRunnable: 0
@@ -536,16 +543,22 @@ MonoBehaviour:
       uniqueId: Tests.dll/Testing/[Tests][Testing.PlatformReachesPoint]
       name: PlatformReachesPoint
       fullName: Testing.PlatformReachesPoint
-      resultStatus: 2
-      duration: 0.1250178
-      messages: 'System.InvalidOperationException : Assert.Equals should not be used
-        for Assertions'
-      output: 
-      stacktrace: "  at NUnit.Framework.Assert.Equals (System.Object a, System.Object
-        b) [0x00001] in <59819be142c34115ade688f6962021f1>:0 \r\n  at Testing+<PlatformReachesPoint>d__5.MoveNext
-        () [0x0008c] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\Testing.cs:57
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-        in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
+      resultStatus: 0
+      duration: 0.0146339
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+        NullReferenceException: Object reference not set to an
+        instance of an object
+
+'
+      stacktrace: 'PlayerController.FixedUpdate () (at Assets/Scripts/PlayerController.cs:17)
+
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -558,16 +571,19 @@ MonoBehaviour:
       uniqueId: Tests.dll/Testing/[Tests][Testing.PlatformReachesSecondPoint]
       name: PlatformReachesSecondPoint
       fullName: Testing.PlatformReachesSecondPoint
-      resultStatus: 2
-      duration: 0.1249641
-      messages: 'System.InvalidOperationException : Assert.Equals should not be used
-        for Assertions'
-      output: 
-      stacktrace: "  at NUnit.Framework.Assert.Equals (System.Object a, System.Object
-        b) [0x00001] in <59819be142c34115ade688f6962021f1>:0 \r\n  at Testing+<PlatformReachesSecondPoint>d__6.MoveNext
-        () [0x0008c] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\Testing.cs:68
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-        in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
+      resultStatus: 0
+      duration: 0.0171155
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'PlayerController.FixedUpdate () (at Assets/Scripts/PlayerController.cs:17)
+
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -580,16 +596,19 @@ MonoBehaviour:
       uniqueId: Tests.dll/Testing/[Tests][Testing.PlatformReachesThirdPoint]
       name: PlatformReachesThirdPoint
       fullName: Testing.PlatformReachesThirdPoint
-      resultStatus: 2
-      duration: 0.1259401
-      messages: 'System.InvalidOperationException : Assert.Equals should not be used
-        for Assertions'
-      output: 
-      stacktrace: "  at NUnit.Framework.Assert.Equals (System.Object a, System.Object
-        b) [0x00001] in <59819be142c34115ade688f6962021f1>:0 \r\n  at Testing+<PlatformReachesThirdPoint>d__7.MoveNext
-        () [0x0008c] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\Testing.cs:79
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-        in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
+      resultStatus: 0
+      duration: 0.0150026
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'NullReferenceException: Object reference not set to an instance of
+        an object
+
+'
+      stacktrace: 'PlayerController.FixedUpdate () (at Assets/Scripts/PlayerController.cs:17)
+
+
+
+'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -602,11 +621,21 @@ MonoBehaviour:
       uniqueId: Tests.dll/Testing/[Tests][Testing.PlayerOnPlatform]
       name: PlayerOnPlatform
       fullName: Testing.PlayerOnPlatform
-      resultStatus: 1
-      duration: 0.1225671
-      messages: 
+      resultStatus: 0
+      duration: 0.0206339
+      messages: 'UnityEngine.UnassignedReferenceException : The variable player of
+        Game has not been assigned.
+
+        You probably need to assign the player
+        variable of the Game script in the inspector.'
       output: 
-      stacktrace: 
+      stacktrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.GetComponentFastPath(UnityEngine.GameObject,System.Type,intptr)\r\n 
+        at UnityEngine.GameObject.GetComponent[T] () [0x00021] in <8691ad7005ed4755a1828378ff0b52b1>:0
+        \r\n  at Game.GetPlayer () [0x00001] in D:\\Users\\dave2\\Desktop\\New folder
+        (3)\\RWM2021-C00204740\\Platforms\\Assets\\Scripts\\Game.cs:35 \r\n  at Testing+<PlayerOnPlatform>d__4.MoveNext
+        () [0x0003b] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\Testing.cs:43
+        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
+        in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -615,23 +644,17 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/[Tests][Testing][suite]
-    m_ResultText: "PlatformMovesRight (0.193s)\n---\nExpected: greater than -1.69000006f\r\n 
-      But was:  -1.69000006f\n---\nat Testing+<PlatformMovesRight>d__3.MoveNext ()
-      [0x000d3] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\Testing.cs:36\r\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c] in
-      D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31"
-    m_ResultStacktrace: 'at Testing+<PlatformMovesRight>d__3.MoveNext () [0x000d3]
-      in D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Assets\Tests\Testing.cs:36
+    m_ResultText: 'Platforms (0.210s)
 
-      at
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c] in
-      D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
+      ---
 
-'
+      One or more child tests had
+      errors'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1d0a880e
-      m_LastClickedID: 243796509
+      m_SelectedIDs: ea082145
+      m_LastClickedID: 1159792874
       m_ExpandedIDs: b2c65b826d98138ec7fca4be58ad68e7e557abf7cd7318fc72a7770bc5956e104dad7d13e9ece11baac44b398359db4128c00b42ea08214537108a7745dca17ba03e737fffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -731,9 +754,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 551
+    y: 532
     width: 688
-    height: 458
+    height: 477
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 1
   m_WindowGUID: 5d7aa8d03bd6c6946a3dff4ab44ee155
@@ -745,9 +768,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.1944249, y: -1.1741346, z: -1.7701265}
+    m_Target: {x: 4.6401, y: 0.42350337, z: -1.7534263}
     speed: 2
-    m_Value: {x: -1.1944249, y: -1.1741346, z: -1.7701265}
+    m_Value: {x: 4.6401, y: 0.42350337, z: -1.7534263}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -797,9 +820,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.5892286
+    m_Target: 7.844928
     speed: 2
-    m_Value: 6.5892286
+    m_Value: 7.844928
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -863,20 +886,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 783a0000
-    m_LastClickedID: 14968
-    m_ExpandedIDs: 000000006a3a0000703a0000
+    m_SelectedIDs: 0c3a0000
+    m_LastClickedID: 14860
+    m_ExpandedIDs: 00000000023a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -904,7 +927,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a3a0000
+    m_ExpandedIDs: 00000000023a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1015,9 +1038,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 04faffff
-      m_LastClickedID: -1532
-      m_ExpandedIDs: 2afaffff2cfaffff
+      m_SelectedIDs: 52fbffff
+      m_LastClickedID: -1198
+      m_ExpandedIDs: 56fbffff5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

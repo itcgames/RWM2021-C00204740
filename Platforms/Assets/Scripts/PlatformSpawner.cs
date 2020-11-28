@@ -13,11 +13,14 @@ public class PlatformSpawner : MonoBehaviour
        
         platformNumber = 0;
         totalPlatformNumber = 4;
+       
+       
         for (int i = 0; i < totalPlatformNumber; i++)
         {
             spawnPlatform();
             platformNumber++;
         }
+        
     }
 
     public void spawnPlatform()

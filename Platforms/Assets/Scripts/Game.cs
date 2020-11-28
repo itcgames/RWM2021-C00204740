@@ -8,6 +8,8 @@ public class Game : MonoBehaviour
     private GameObject platModel;
     [SerializeField]
     private GameObject movePath;
+    [SerializeField]
+    private GameObject player;
 
     private static Game instance;
 
@@ -27,5 +29,9 @@ public class Game : MonoBehaviour
     public Paths GetPoints()
     {
         return movePath.GetComponent<Paths>();
+    }
+    public PlayerController GetPlayer()
+    {
+        return player.GetComponent<PlayerController>();
     }
 }
