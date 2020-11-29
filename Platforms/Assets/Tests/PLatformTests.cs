@@ -40,13 +40,13 @@ namespace Tests
         public IEnumerator RotationBegins()
         {
             GameObject platform = game.GetPlatform().gameObject;
-            float initialZRotation = platform.transform.rotation.z;
+            GameObject player = game.GetPlayer().gameObject;
             game.GetPlatform().setUp();
             game.GetPlatform().setTypeRotation();
             //wait for .5 seconds and check if the current rotation is greater than the initial
             yield return new WaitForSeconds(0.3f);
             game.GetPlatform().PlatformRotation();
-            Assert.Greater(platform.transform.rotation.z, initialZRotation);
+            Assert.True(game.rotating);
         }
         [UnityTest]
         public IEnumerator PlayerOnPlatform()
