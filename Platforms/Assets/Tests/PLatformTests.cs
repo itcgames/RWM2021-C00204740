@@ -39,6 +39,17 @@ namespace Tests
         [UnityTest]
         public IEnumerator RotationBegins()
         {
+            GameObject path = game.GetObstacle().gameObject;
+            game.GetObstacle().SetUp();
+            game.GetObstacle().SpawnObstacle();
+            //wait for .5 seconds and check if the current rotation is greater than the initial
+            yield return new WaitForSeconds(0.3f);
+           
+            Assert.True(game.obstacleGenerated);
+        }
+        [UnityTest]
+        public IEnumerator ObstacleGen()
+        {
             GameObject platform = game.GetPlatform().gameObject;
             GameObject player = game.GetPlayer().gameObject;
             game.GetPlatform().setUp();
