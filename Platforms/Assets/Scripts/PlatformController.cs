@@ -77,28 +77,27 @@ public class PlatformController : MonoBehaviour
         }
 
     }
-    void PlatformRotation()
+    public void PlatformRotation()
     {
-       
-        if (moveType == MoveType.rotatePlatform)
+        if (playerOnPlat == true)
         {
-            if (playerOnPlat == true)
-            {
-                beginRotation = true;
-                Debug.Log("Rotation Start");
-            }
-            if (transform.rotation == startRotation && beginRotation == true && playerOnPlat == false)
-            {
-                transform.rotation = startRotation;
-                beginRotation = false;
-                Debug.Log("Rotation End");
-            }
-            if (beginRotation == true)
-            {
-                transform.Rotate(new Vector3(0, 0, rotationSpeed * Time.deltaTime));
-                Debug.Log("Rotation Happening");
-            }
+            beginRotation = true;
+            Game.NotBackToOgRotation();
+            Debug.Log("Rotation Start");
         }
+        if (transform.rotation == startRotation && beginRotation == true && playerOnPlat == false)
+        {
+            transform.rotation = startRotation;
+            beginRotation = false;
+            Game.BackToOgRotation();
+            Debug.Log("Rotation End");
+        }
+        if (beginRotation == true)
+        {
+            transform.Rotate(new Vector3(0, 0, rotationSpeed * Time.deltaTime));
+            Debug.Log("Rotation Happening");
+        }
+        
     }
     public void MoveToward()
     {

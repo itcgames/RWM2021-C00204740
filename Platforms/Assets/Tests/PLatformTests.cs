@@ -47,6 +47,19 @@ namespace Tests
             yield return new WaitForSeconds(0.5f);
             Assert.True(game.playerOnPlat);
         }
-       
+        [UnityTest]
+        public IEnumerator RotateToOriginal()
+        {
+            GameObject platform = game.GetPlatform().gameObject;
+            game.GetPlatform().setTypeRotation();
+            //float initialZRotation = platform.transform.rotation.x;
+            
+            game.GetPlatform().setUp();
+            //wait for 0.1 sec and assert that the x pos is greater
+            yield return new WaitForSeconds(10.0f);
+
+            game.GetPlatform().PlatformRotation();
+            Assert.True(game.backToOriginalRotation);
+        }
     }
 }
