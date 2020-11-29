@@ -77,28 +77,27 @@ public class PlatformController : MonoBehaviour
         }
 
     }
-    void PlatformRotation()
+    public void PlatformRotation()
     {
-       
-        if (moveType == MoveType.rotatePlatform)
+        if (playerOnPlat == true)
         {
-            if (playerOnPlat == true)
-            {
-                beginRotation = true;
-                Debug.Log("Rotation Start");
-            }
-            if (transform.rotation == startRotation && beginRotation == true && playerOnPlat == false)
-            {
-                transform.rotation = startRotation;
-                beginRotation = false;
-                Debug.Log("Rotation End");
-            }
-            if (beginRotation == true)
-            {
-                transform.Rotate(new Vector3(0, 0, rotationSpeed * Time.deltaTime));
-                Debug.Log("Rotation Happening");
-            }
+            beginRotation = true;
+            Game.NotBackToOgRotation();
+            Debug.Log("Rotation Start");
         }
+        if (transform.rotation == startRotation && beginRotation == true && playerOnPlat == false)
+        {
+            transform.rotation = startRotation;
+            beginRotation = false;
+            Game.BackToOgRotation();
+            Debug.Log("Rotation End");
+        }
+        if (beginRotation == true)
+        {
+            transform.Rotate(new Vector3(0, 0, rotationSpeed * Time.deltaTime));
+            Debug.Log("Rotation Happening");
+        }
+        
     }
     public void MoveToward()
     {
@@ -124,9 +123,11 @@ public class PlatformController : MonoBehaviour
             Renderer render = GetComponent<Renderer>();
             render.material.color = Color.green;
             playerOnPlat = true;
+            Game.playerIsOnPlat();
             if (moveType == MoveType.moveTowardsPoint)
             {
                 collision.transform.SetParent(transform);
+                
             }
         }
     }
@@ -138,6 +139,7 @@ public class PlatformController : MonoBehaviour
             render.material.color = Color.red;
             playerOnPlat = false;
             collision.transform.SetParent(null);
+            Game.playerIsNotPlat();
 
         }
     }

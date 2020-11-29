@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
+
+    public bool playerOnPlat = false;
+    public bool backToOriginalRotation = false;
+
     [SerializeField]
     private GameObject platModel;
     [SerializeField]
@@ -17,6 +21,22 @@ public class Game : MonoBehaviour
     {
         instance = this;
 
+    }
+    public static void playerIsOnPlat()
+    {
+        instance.playerOnPlat = true;
+    }
+    public static void playerIsNotPlat()
+    {
+        instance.playerOnPlat = false;
+    }
+    public static void BackToOgRotation()
+    {
+        instance.backToOriginalRotation = true;
+    }
+    public static void NotBackToOgRotation()
+    {
+        instance.backToOriginalRotation = false;
     }
     public Transform[] getTransformArr()
     {
