@@ -7,6 +7,7 @@ public class Game : MonoBehaviour
 
     public bool playerOnPlat = false;
     public bool backToOriginalRotation = false;
+    public bool rotating = false;
 
     [SerializeField]
     private GameObject platModel;
@@ -21,6 +22,10 @@ public class Game : MonoBehaviour
     {
         instance = this;
 
+    }
+    public static void isRotating()
+    {
+        instance.rotating = true;
     }
     public static void playerIsOnPlat()
     {

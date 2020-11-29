@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlatformSpawner : MonoBehaviour
 {
+    
     public GameObject platform;
+ 
     private int platformNumber;
     public int totalPlatformNumber;
     Transform child;
