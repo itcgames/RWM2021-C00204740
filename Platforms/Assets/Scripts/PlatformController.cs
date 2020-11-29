@@ -1,27 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum MoveType
+{
+    moveTowardsPoint,
+    rotatePlatform
+}
 public class PlatformController : MonoBehaviour
 {
     //Controller for the platform
-    public enum MoveType
-    {
-        moveTowardsPoint,
-        rotatePlatform
-    }
     Quaternion startRotation;
     bool beginRotation;
     public MoveType moveType = MoveType.moveTowardsPoint;
+    int movementType = 0;
     public Paths path;
     //object speed
     public float speed;
     public float rotationSpeed;
-    public GameObject player;
     public float distanceToPoint;
     private IEnumerator<Transform> pointInPath;
     bool playerOnPlat;
     void Start()
+    {
+        setUp();
+        //set the platform position to the first point
+        //transform.position = pointInPath.Current.position;
+    }
+    public void setUp()
     {
         playerOnPlat = false;
         speed = 2.0f;
@@ -35,20 +40,21 @@ public class PlatformController : MonoBehaviour
         beginRotation = false;
         if (pointInPath == null)
         {
-
             Debug.Log("Path needs points");
             return;
         }
-        //set the platform position to the first point
-        transform.position = pointInPath.Current.position;
     }
-    public void setType()
+    public void setTypeMove()
     {
         moveType = MoveType.moveTowardsPoint;
     }
-    public MoveType getType()
+    public void setTypeRotation()
     {
-        return moveType;
+        moveType = MoveType.rotatePlatform;
+    }
+    public int getType()
+    {
+        return movementType;
     }
     void Update()
     {
@@ -60,10 +66,13 @@ public class PlatformController : MonoBehaviour
         //The movement type is a move towards then call move towards function
         if (moveType == MoveType.moveTowardsPoint)
         {
-            MoveTowards();
+            movementType = 1;
+            MoveToward();
+           
         }
         if (moveType == MoveType.rotatePlatform)
         {
+            movementType = 2;
             PlatformRotation();
         }
 
@@ -91,15 +100,12 @@ public class PlatformController : MonoBehaviour
             }
         }
     }
-    public void MoveTowards()
+    public void MoveToward()
     {
-        //check if the movement type is a movetowards
-        if (moveType == MoveType.moveTowardsPoint)
-        {
-            //using the move towards function then move to next point in path
-            transform.position = Vector3.MoveTowards(transform.position, pointInPath.Current.position
-                , Time.deltaTime * speed);
-        }
+        //using the move towards function then move to next point in path
+        transform.position = Vector3.MoveTowards(transform.position, pointInPath.Current.position
+            , Time.deltaTime * speed);
+        
         //check if the platform is close to the point and if so move to the next
         float distaneSq = (transform.position - pointInPath.Current.position).sqrMagnitude;
         if (distaneSq < distanceToPoint * distanceToPoint)
@@ -118,7 +124,10 @@ public class PlatformController : MonoBehaviour
             Renderer render = GetComponent<Renderer>();
             render.material.color = Color.green;
             playerOnPlat = true;
-            collision.transform.SetParent(transform);
+            if (moveType == MoveType.moveTowardsPoint)
+            {
+                collision.transform.SetParent(transform);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
