@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 909, y: 342}
   m_MaxSize: {x: 22004, y: 10021}
   vertical: 1
-  controlID: 128
+  controlID: 155
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 909, y: 342}
   m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 129
+  controlID: 156
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 342}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 59
+  controlID: 64
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -415,7 +415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 688
+    width: 1002
     height: 438
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
@@ -444,7 +444,7 @@ MonoBehaviour:
     height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 178
+    ID: 161
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: 140100005c000000
@@ -464,9 +464,9 @@ MonoBehaviour:
       uniqueId: '[Platforms][suite]'
       name: Platforms
       fullName: Platforms
-      resultStatus: 2
-      duration: 0.1622281
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.8357714
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -480,9 +480,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: D:/Users/dave2/Desktop/New folder (3)/RWM2021-C00204740/Platforms/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 2
-      duration: 0.1366138
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.7935639
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -496,9 +496,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 0.1243907
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.7750938
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
       name: PLatformTests
       fullName: Tests.PLatformTests
-      resultStatus: 2
-      duration: 0.1144256
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.7625323
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -529,298 +529,10 @@ MonoBehaviour:
       name: PlatformMovesRight
       fullName: Tests.PLatformTests.PlatformMovesRight
       resultStatus: 1
-      duration: 0.199261
+      duration: 0.2031255
       messages: 
-      output: 'MissingReferenceException: The object of type ''Transform'' has been
-        destroyed but you are still trying to access it.
-
-        Your script should
-        either check if it is null or you should not destroy the object.
-
-        MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.
-
-        MissingReferenceException: The object
-        of type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-'
+      output: 
       stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/PLatformTests/[Tests][Tests.PLatformTests.PlatformReachesPoint]
-      name: PlatformReachesPoint
-      fullName: Tests.PLatformTests.PlatformReachesPoint
-      resultStatus: 2
-      duration: 0.0139058
-      messages: 'Unhandled log message: ''[Exception] MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingReferenceException: The object of type ''Transform'' has been
-        destroyed but you are still trying to access it.
-
-        Your script should
-        either check if it is null or you should not destroy the object.
-
-        MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.
-
-        MissingReferenceException: The object
-        of type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-'
-      stacktrace: 'UnityEngine.Transform.get_position () (at <8691ad7005ed4755a1828378ff0b52b1>:0)
-
-        PlatformController.MoveToward
-        () (at Assets/Scripts/PlatformController.cs:106)
-
-        PlatformController.Update
-        () (at Assets/Scripts/PlatformController.cs:70)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
-    - id: 1005
-      uniqueId: Tests.dll/Tests/PLatformTests/[Tests][Tests.PLatformTests.PlatformReachesSecondPoint]
-      name: PlatformReachesSecondPoint
-      fullName: Tests.PLatformTests.PlatformReachesSecondPoint
-      resultStatus: 2
-      duration: 0.0166983
-      messages: 'Unhandled log message: ''[Exception] MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingReferenceException: The object of type ''Transform'' has been
-        destroyed but you are still trying to access it.
-
-        Your script should
-        either check if it is null or you should not destroy the object.
-
-        MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.
-
-        MissingReferenceException: The object
-        of type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-'
-      stacktrace: 'UnityEngine.Transform.get_position () (at <8691ad7005ed4755a1828378ff0b52b1>:0)
-
-        PlatformController.MoveToward
-        () (at Assets/Scripts/PlatformController.cs:106)
-
-        PlatformController.Update
-        () (at Assets/Scripts/PlatformController.cs:70)
-
-
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
-    - id: 1006
-      uniqueId: Tests.dll/Tests/PLatformTests/[Tests][Tests.PLatformTests.PlatformReachesThirdPoint]
-      name: PlatformReachesThirdPoint
-      fullName: Tests.PLatformTests.PlatformReachesThirdPoint
-      resultStatus: 2
-      duration: 0.0160453
-      messages: 'Unhandled log message: ''[Exception] MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'MissingReferenceException: The object of type ''Transform'' has been
-        destroyed but you are still trying to access it.
-
-        Your script should
-        either check if it is null or you should not destroy the object.
-
-        MissingReferenceException:
-        The object of type ''Transform'' has been destroyed but you are still trying
-        to access it.
-
-        Your script should either check if it is null or you
-        should not destroy the object.
-
-        MissingReferenceException: The object
-        of type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-        MissingReferenceException: The object of
-        type ''Transform'' has been destroyed but you are still trying to access
-        it.
-
-        Your script should either check if it is null or you should
-        not destroy the object.
-
-'
-      stacktrace: 'UnityEngine.Transform.get_position () (at <8691ad7005ed4755a1828378ff0b52b1>:0)
-
-        PlatformController.MoveToward
-        () (at Assets/Scripts/PlatformController.cs:106)
-
-        PlatformController.Update
-        () (at Assets/Scripts/PlatformController.cs:70)
-
-
-
-'
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -833,15 +545,360 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/PLatformTests/[Tests][Tests.PLatformTests.PlayerOnPlatform]
       name: PlayerOnPlatform
       fullName: Tests.PLatformTests.PlayerOnPlatform
-      resultStatus: 2
-      duration: 0.0895452
-      messages: 'System.NullReferenceException : Object reference not set to an instance
-        of an object'
-      output: 
-      stacktrace: "  at Tests.PLatformTests+<PlayerOnPlatform>d__4.MoveNext () [0x0003e]
-        in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\PLatformTests.cs:43
-        \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-        in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
+      resultStatus: 1
+      duration: 0.5286729
+      messages: 
+      output: 'Rotation Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Happening
+
+        Rotation Happening
+
+'
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -850,15 +907,348 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
-    m_ResultText: "PlayerOnPlatform (0.090s)\n---\nSystem.NullReferenceException
-      : Object reference not set to an instance of an object\n---\nat Tests.PLatformTests+<PlayerOnPlatform>d__4.MoveNext
-      () [0x0003e] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\PLatformTests.cs:43
-      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-      in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31"
-    m_ResultStacktrace: "  at Tests.PLatformTests+<PlayerOnPlatform>d__4.MoveNext
-      () [0x0003e] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\PLatformTests.cs:43
-      \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
-      in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31 "
+    m_ResultText: 'PlayerOnPlatform (0.529s)
+
+      ---
+
+      Rotation Start
+
+      Rotation
+      Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Start
+
+      Rotation Happening
+
+      Rotation Start
+
+      Rotation Happening
+
+      Rotation
+      Happening
+
+      Rotation Happening'
+    m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 86c8a701
@@ -976,9 +1366,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.3943973, y: 1.310694, z: -11.054485}
+    m_Target: {x: 0.72754264, y: -0.16082108, z: -13.948154}
     speed: 2
-    m_Value: {x: -4.3943973, y: 1.310694, z: -11.054485}
+    m_Value: {x: 0.72754264, y: -0.16082108, z: -13.948154}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1028,9 +1418,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.2185904
+    m_Target: 7.432081
     speed: 2
-    m_Value: 1.2185904
+    m_Value: 7.432081
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1105,9 +1495,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a3a0000
-    m_LastClickedID: 14858
-    m_ExpandedIDs: 00000000fc390000023a0000
+    m_SelectedIDs: 0c3a0000
+    m_LastClickedID: 14860
+    m_ExpandedIDs: 00000000fc390000043a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1162,7 +1552,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300008c360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1248,7 +1638,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2ef9ffff44f9ffff76faffff5efbffff
+      m_ExpandedIDs: a259ffffb859ffffa65bffff165dffff2e5dffff1a5fffffcc5fffffe45fffff0064ffff5e64ffff7464ffffbc66ffff1c67ffff3467ffff646cffffd46cffffec6cffff0871ffff6271ffff7871ffffc073ffff1a74ffff3074ffff3878ffff9278ffffa878fffff07affff487bffff607bffff667fffff1280ffff2a80ffff3084ffff8c84ffffa484ffffd685ffff8a86ffffa086ffffd287ffff3488ffff4c88ffff7c89ffff7c8affff928affffd88cffff4c8effff648effff6a92ffffde93fffff293ffff2495ffffa095ffffb895fffffe97ffff5898ffff6e98ffff729cffff68a3ffff80a3ffff8aa8ffff34a9ffff4ca9ffff48adffff9eadffffb6adffffe6aeffff90afffffa8afffffa4b3ffff4eb4ffff66b4ffffa4b6fffffcb6ffff12b7ffff1cbcffffcebcffffe6bcfffff0c1ffff4cc2ffff62c2ffff5ec6ffff4cc9ffff54c9ffff6ac9ffff98caffff46cbffff5ccbffff8accffffe0ccfffff6ccffff2ecfffff84cfffff9acfffff94d3ffff96d4ffffacd4ffffe4d6ffff3ad7ffff50d7ffff54dcffff0cddffff22ddffff26e2ffffa0e3ffffb6e3ffffb0e7ffff06e8ffff1ce8ffff4ae9ffffa0e9ffffb6e9ffffe4eaffff44efffff4cefffff64efffff60f3ffffb6f3ffffcef3ffff0cf6ffff64f6ffff7af6ffff78faffff5efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -124,9 +124,11 @@ public class PlatformController : MonoBehaviour
             Renderer render = GetComponent<Renderer>();
             render.material.color = Color.green;
             playerOnPlat = true;
+            Game.playerIsOnPlat();
             if (moveType == MoveType.moveTowardsPoint)
             {
                 collision.transform.SetParent(transform);
+                
             }
         }
     }
@@ -138,6 +140,7 @@ public class PlatformController : MonoBehaviour
             render.material.color = Color.red;
             playerOnPlat = false;
             collision.transform.SetParent(null);
+            Game.playerIsNotPlat();
 
         }
     }

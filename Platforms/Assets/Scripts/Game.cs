@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Game : MonoBehaviour
 {
+
+    public bool playerOnPlat = false;
+
     [SerializeField]
     private GameObject platModel;
     [SerializeField]
@@ -17,6 +20,14 @@ public class Game : MonoBehaviour
     {
         instance = this;
 
+    }
+    public static void playerIsOnPlat()
+    {
+        instance.playerOnPlat = true;
+    }
+    public static void playerIsNotPlat()
+    {
+        instance.playerOnPlat = false;
     }
     public Transform[] getTransformArr()
     {
