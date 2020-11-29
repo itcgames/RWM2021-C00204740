@@ -12,6 +12,10 @@ public class ObstacleGenerator : MonoBehaviour
     Transform child;
     private void Start()
     {
+        SetUp();
+    }
+    public void SetUp()
+    {
         yOffset = 1.5f;
         obstacleNumber = 0;
         totalObstacleNumber = 3;
@@ -20,10 +24,10 @@ public class ObstacleGenerator : MonoBehaviour
             obstacleNumber++;
             SpawnObstacle();
         }
-
     }
     public void SpawnObstacle()
     {
+        Game.ObstacleGenerated();
         child = gameObject.transform.GetChild(obstacleNumber);
         float xPos = child.position.x;
         float yPos = child.position.y + yOffset;

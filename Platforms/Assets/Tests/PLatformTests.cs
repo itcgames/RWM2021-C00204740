@@ -39,8 +39,18 @@ namespace Tests
         [UnityTest]
         public IEnumerator RotationBegins()
         {
-            GameObject platform = game.GetPlatform().gameObject;
-            GameObject player = game.GetPlayer().gameObject;
+            
+            game.GetObstacle().SetUp();
+            game.GetObstacle().SpawnObstacle();
+            //wait for .5 seconds and check if the current rotation is greater than the initial
+            yield return new WaitForSeconds(0.3f);
+           
+            Assert.True(game.obstacleGenerated);
+        }
+        [UnityTest]
+        public IEnumerator ObstacleGen()
+        {
+            
             game.GetPlatform().setUp();
             game.GetPlatform().setTypeRotation();
             //wait for .5 seconds and check if the current rotation is greater than the initial
@@ -51,8 +61,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator PlayerOnPlatform()
         {
-            GameObject platform = game.GetPlatform().gameObject;
-            GameObject player = game.GetPlayer().gameObject;
+      
 
             game.GetPlatform().setTypeRotation();
             //wait for .5 secs and asset that the bool to check player was on platform was true
@@ -62,10 +71,8 @@ namespace Tests
         [UnityTest]
         public IEnumerator RotateToOriginal()
         {
-            GameObject platform = game.GetPlatform().gameObject;
-            game.GetPlatform().setTypeRotation();
-           
             
+            game.GetPlatform().setTypeRotation();
             game.GetPlatform().setUp();
             //wait for 10 sec and assert that the bool to check if its at original rotation is true
             yield return new WaitForSeconds(10.0f);

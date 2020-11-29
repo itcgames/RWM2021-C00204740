@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     public bool playerOnPlat = false;
     public bool backToOriginalRotation = false;
     public bool rotating = false;
+    public bool obstacleGenerated = false;
 
     [SerializeField]
     private GameObject platModel;
@@ -15,6 +16,7 @@ public class Game : MonoBehaviour
     private GameObject movePath;
     [SerializeField]
     private GameObject player;
+
 
     private static Game instance;
 
@@ -26,6 +28,10 @@ public class Game : MonoBehaviour
     public static void isRotating()
     {
         instance.rotating = true;
+    }
+    public static void ObstacleGenerated()
+    {
+        instance.obstacleGenerated = true;
     }
     public static void playerIsOnPlat()
     {
@@ -58,5 +64,9 @@ public class Game : MonoBehaviour
     public PlayerController GetPlayer()
     {
         return player.GetComponent<PlayerController>();
+    }
+    public ObstacleGenerator GetObstacle()
+    {
+        return movePath.GetComponent<ObstacleGenerator>();
     }
 }
