@@ -37,13 +37,25 @@ namespace Tests
             Assert.Greater(platform.transform.position.x, initialXPos);
         }
         [UnityTest]
+        public IEnumerator RotationBegins()
+        {
+            GameObject platform = game.GetPlatform().gameObject;
+            float initialZRotation = platform.transform.rotation.z;
+            game.GetPlatform().setUp();
+            game.GetPlatform().setTypeRotation();
+            //wait for .5 seconds and check if the current rotation is greater than the initial
+            yield return new WaitForSeconds(0.3f);
+            game.GetPlatform().PlatformRotation();
+            Assert.Greater(platform.transform.rotation.z, initialZRotation);
+        }
+        [UnityTest]
         public IEnumerator PlayerOnPlatform()
         {
             GameObject platform = game.GetPlatform().gameObject;
             GameObject player = game.GetPlayer().gameObject;
 
             game.GetPlatform().setTypeRotation();
-
+            //wait for .5 secs and asset that the bool to check player was on platform was true
             yield return new WaitForSeconds(0.5f);
             Assert.True(game.playerOnPlat);
         }
@@ -52,14 +64,15 @@ namespace Tests
         {
             GameObject platform = game.GetPlatform().gameObject;
             game.GetPlatform().setTypeRotation();
-            //float initialZRotation = platform.transform.rotation.x;
+           
             
             game.GetPlatform().setUp();
-            //wait for 0.1 sec and assert that the x pos is greater
+            //wait for 10 sec and assert that the bool to check if its at original rotation is true
             yield return new WaitForSeconds(10.0f);
 
             game.GetPlatform().PlatformRotation();
             Assert.True(game.backToOriginalRotation);
         }
+        
     }
 }

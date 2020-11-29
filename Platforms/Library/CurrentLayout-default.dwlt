@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1007
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 908, y: 342}
   m_MaxSize: {x: 22003, y: 10021}
   vertical: 1
-  controlID: 155
+  controlID: 90
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 908, y: 342}
   m_MaxSize: {x: 22003, y: 10021}
   vertical: 0
-  controlID: 156
+  controlID: 91
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 342}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 64
+  controlID: 36
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 1003
     height: 459
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 13}
@@ -444,7 +444,7 @@ MonoBehaviour:
     height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 161
+    ID: 159
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: 140100005c000000
@@ -464,9 +464,9 @@ MonoBehaviour:
       uniqueId: '[Platforms][suite]'
       name: Platforms
       fullName: Platforms
-      resultStatus: 1
-      duration: 11.437329
-      messages: 
+      resultStatus: 2
+      duration: 11.820864
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -480,9 +480,9 @@ MonoBehaviour:
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
       fullName: D:/Users/dave2/Desktop/New folder (3)/RWM2021-C00204740/Platforms/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 11.245854
-      messages: 
+      resultStatus: 2
+      duration: 11.62785
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -496,9 +496,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 11.080678
-      messages: 
+      resultStatus: 2
+      duration: 11.455949
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
       name: PLatformTests
       fullName: Tests.PLatformTests
-      resultStatus: 1
-      duration: 10.919612
-      messages: 
+      resultStatus: 2
+      duration: 11.288104
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
       name: PlatformMovesRight
       fullName: Tests.PLatformTests.PlatformMovesRight
       resultStatus: 1
-      duration: 0.1823904
+      duration: 0.1966244
       messages: 
       output: 
       stacktrace: 
@@ -546,7 +546,7 @@ MonoBehaviour:
       name: PlayerOnPlatform
       fullName: Tests.PLatformTests.PlayerOnPlatform
       resultStatus: 1
-      duration: 0.529138
+      duration: 0.5417964
       messages: 
       output: 'Rotation Start
 
@@ -884,7 +884,44 @@ MonoBehaviour:
         Rotation Happening
 
         Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
         Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Start
+
+        Rotation Happening
+
+        Rotation
+        Start
+
+        Rotation Happening
+
+        Rotation Start
+
+        Rotation
+        Happening
+
+        Rotation Happening
 
         Rotation Happening
 
@@ -903,7 +940,7 @@ MonoBehaviour:
       name: RotateToOriginal
       fullName: Tests.PLatformTests.RotateToOriginal
       resultStatus: 1
-      duration: 10.027731
+      duration: 10.023399
       messages: 
       output: 'Rotation Happening
 
@@ -947,176 +984,50 @@ MonoBehaviour:
         Rotation
         Happening
 
-        Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
-
-        Rotation Happening
-
-        Rotation Start
-
-        Rotation
-        Happening
-
-        Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
-
-        Rotation Happening
-
-        Rotation Start
-
-        Rotation
-        Happening
-
-        Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
-
-        Rotation Happening
-
-        Rotation Start
-
-        Rotation
-        Happening
-
-        Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
-
-        Rotation Happening
-
-        Rotation Start
-
-        Rotation
-        Happening
-
-        Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
-
-        Rotation Happening
-
-        Rotation Start
-
-        Rotation
-        Happening
-
-        Rotation Start
-
         Rotation Happening
 
-        Rotation
-        Start
-
         Rotation Happening
-
-        Rotation Start
 
         Rotation
         Happening
-
-        Rotation Start
 
         Rotation Happening
-
-        Rotation
-        Start
 
         Rotation Happening
-
-        Rotation Start
 
         Rotation
         Happening
 
-        Rotation Start
-
         Rotation Happening
-
-        Rotation
-        Start
 
         Rotation Happening
-
-        Rotation Start
 
         Rotation
         Happening
-
-        Rotation Start
 
         Rotation Happening
-
-        Rotation
-        Start
 
         Rotation Happening
 
-        Rotation Start
-
         Rotation
         Happening
-
-        Rotation Start
 
         Rotation Happening
 
-        Rotation
-        Start
-
         Rotation Happening
-
-        Rotation Start
 
         Rotation
         Happening
-
-        Rotation Start
 
         Rotation Happening
-
-        Rotation
-        Start
 
         Rotation Happening
-
-        Rotation Start
 
         Rotation
         Happening
 
-        Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
-
         Rotation Happening
-
-        Rotation Start
-
-        Rotation
-        Happening
 
-        Rotation Start
-
         Rotation Happening
 
         Rotation
@@ -2159,23 +2070,9 @@ MonoBehaviour:
         Start
 
         Rotation Happening
-
-        Rotation Start
 
-        Rotation
-        Happening
-
         Rotation Start
-
-        Rotation Happening
-
-        Rotation
-        Start
 
-        Rotation Happening
-
-        Rotation Happening
-
         Rotation
         Happening
 
@@ -2329,447 +2226,6 @@ MonoBehaviour:
         Rotation Happening
 
         Rotation Start
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
-
-        Rotation
-        Happening
-
-        Rotation Happening
-
-        Rotation Happening
 
         Rotation
         Happening
@@ -13384,7 +12840,23 @@ MonoBehaviour:
         Rotation Happening
 
         Rotation
-        End
+        Happening
+
+        Rotation Happening
+
+        Rotation Happening
+
+        Rotation
+        Happening
+
+        Rotation Happening
+
+        Rotation Happening
+
+        Rotation
+        Happening
+
+        Rotation End
 
 '
       stacktrace: 
@@ -13396,1852 +12868,635 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
-    m_ResultText: 'RotateToOriginal (10.028s)
+    - id: 1003
+      uniqueId: Tests.dll/Tests/PLatformTests/[Tests][Tests.PLatformTests.RotationBegins]
+      name: RotationBegins
+      fullName: Tests.PLatformTests.RotationBegins
+      resultStatus: 2
+      duration: 0.3410371
+      messages: "  Expected: greater than 0.0f\r\n  But was:  0.0f\r\n"
+      output: 'Rotation Start
 
-      ---
+        Rotation Happening
 
-      Rotation Happening
+        Rotation Start
 
-      Rotation
-      Happening
+        Rotation
+        Happening
 
-      Rotation Happening
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Happening
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Happening
+        Rotation Start
 
-      Rotation
-      Happening
+        Rotation
+        Happening
 
-      Rotation Happening
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Happening
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Happening
+        Rotation Start
 
-      Rotation
-      Happening
+        Rotation
+        Happening
 
-      Rotation Happening
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Happening
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation
-      Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation
-      Start
+        Rotation Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation Start
+        Rotation
+        Start
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+        Rotation Happening
 
-      Rotation Happening
+        Rotation
+        Happening
 
-      Rotation Start
+        Rotation Happening
 
-      Rotation Happening
+        Rotation Happening
 
-      Rotation
-      Start
+'
+      stacktrace: 'at Tests.PLatformTests+<RotationBegins>d__4.MoveNext () [0x000a2]
+        in D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Assets\Tests\PLatformTests.cs:49
 
-      Rotation Happening
+        at
+        UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c]
+        in D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
 
-      Rotation Start
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PLatformTests][suite]
+    m_ResultText: "RotationBegins (0.341s)\n---\nExpected: greater than 0.0f\r\n 
+      But was:  0.0f\n---\nat Tests.PLatformTests+<RotationBegins>d__4.MoveNext ()
+      [0x000a2] in D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Assets\\Tests\\PLatformTests.cs:49\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c] in
+      D:\\Users\\dave2\\Desktop\\New folder (3)\\RWM2021-C00204740\\Platforms\\Library\\PackageCache\\com.unity.test-framework@1.1.16\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31\n---\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Start\r\nRotation Happening\r\nRotation Start\r\nRotation Happening\r\nRotation
+      Happening\r\nRotation Happening\r\nRotation Happening\r\nRotation Happening"
+    m_ResultStacktrace: 'at Tests.PLatformTests+<RotationBegins>d__4.MoveNext ()
+      [0x000a2] in D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Assets\Tests\PLatformTests.cs:49
 
-      Rotation Happening
+      at
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__5.MoveNext () [0x0004c] in
+      D:\Users\dave2\Desktop\New folder (3)\RWM2021-C00204740\Platforms\Library\PackageCache\com.unity.test-framework@1.1.16\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:31
 
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Start
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Start
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Start
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation Happening
-
-      Rotation Happening
-
-      Rotation
-      Happening
-
-      Rotation ...
-
-
-      ---MESSAGE TRUNCATED AT 15000 CHARACTERS---'
-    m_ResultStacktrace: 
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d427b560
-      m_LastClickedID: 1622484948
+      m_SelectedIDs: e569d9ab
+      m_LastClickedID: -1411814939
       m_ExpandedIDs: b2c65b826d98138ec7fca4be58ad68e7e557abf7cd7318fc72a7770bc5956e104dad7d13e9ece11baac44b398359db4128c00b42ea082145ee3f6c7737108a7745dca17ba03e737fffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -15484,9 +13739,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e3a0000
-    m_LastClickedID: 14862
-    m_ExpandedIDs: 00000000003a0000083a0000
+    m_SelectedIDs: 923a0000
+    m_LastClickedID: 14994
+    m_ExpandedIDs: 00000000843a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -15514,7 +13769,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000003a0000
+    m_ExpandedIDs: 00000000843a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -15625,9 +13880,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 58310000
       m_LastClickedID: 0
-      m_ExpandedIDs: b0ecffffc6ecffff6cefffffd0efffffe6efffff18f1ffffc8f1ffffdef1ffff10f3ffffbef3ffffd4f3ffff16f6ffff6ef6ffff84f6ffff2ef9ffff5efbffff
+      m_ExpandedIDs: 52beffff68beffffd8c2ffff8cc3ffffa2c3ffff02c7ffffb8c8ffffc0c8ffffd6c8ffff18cbffff70cbffff86cbffffe6ceffff9acfffffb0cfffff1ed1ffff7cd1ffff92d1ffffd4d3ffff2cd4ffff42d4ffffa2d7ffffd0d8ffffd8d8ffffeed8ffff20daffffd0daffffe6daffff26ddffff7eddffff94ddfffff2e0ffffb4e1ffffcae1ffff80e5ffffd8e5ffffeee5ffffa4e9fffffce9ffff12eaffff16efffff76efffff8cefffff4af0ffff50f0ffff40f2ffff06f3ffff1cf3ffff5cf5ffffb4f5ffffcaf5ffff74f8ffff48f9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
