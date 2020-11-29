@@ -17,11 +17,16 @@ public class PlatformController : MonoBehaviour
     //object speed
     public float speed;
     public float rotationSpeed;
-    public GameObject player;
     public float distanceToPoint;
     private IEnumerator<Transform> pointInPath;
     bool playerOnPlat;
     void Start()
+    {
+        setUp();
+        //set the platform position to the first point
+        //transform.position = pointInPath.Current.position;
+    }
+    public void setUp()
     {
         playerOnPlat = false;
         speed = 2.0f;
@@ -38,12 +43,14 @@ public class PlatformController : MonoBehaviour
             Debug.Log("Path needs points");
             return;
         }
-        //set the platform position to the first point
-        //transform.position = pointInPath.Current.position;
     }
-    public void setType()
+    public void setTypeMove()
     {
         moveType = MoveType.moveTowardsPoint;
+    }
+    public void setTypeRotation()
+    {
+        moveType = MoveType.rotatePlatform;
     }
     public int getType()
     {
@@ -60,7 +67,7 @@ public class PlatformController : MonoBehaviour
         if (moveType == MoveType.moveTowardsPoint)
         {
             movementType = 1;
-            MoveTowards();
+            MoveToward();
            
         }
         if (moveType == MoveType.rotatePlatform)
@@ -93,16 +100,12 @@ public class PlatformController : MonoBehaviour
             }
         }
     }
-    public void MoveTowards()
+    public void MoveToward()
     {
-        transform.Translate(-Vector3.right * Time.deltaTime * speed);
-        //check if the movement type is a movetowards
-        if (moveType == MoveType.moveTowardsPoint)
-        {
-            //using the move towards function then move to next point in path
-            transform.position = Vector3.MoveTowards(transform.position, pointInPath.Current.position
-                , Time.deltaTime * speed);
-        }
+        //using the move towards function then move to next point in path
+        transform.position = Vector3.MoveTowards(transform.position, pointInPath.Current.position
+            , Time.deltaTime * speed);
+        
         //check if the platform is close to the point and if so move to the next
         float distaneSq = (transform.position - pointInPath.Current.position).sqrMagnitude;
         if (distaneSq < distanceToPoint * distanceToPoint)

@@ -18,6 +18,10 @@ public class Paths : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        setUp();
+    }
+    public void setUp()
+    {
         moveDir = 1;
         moveTo = 0;
     }
@@ -51,21 +55,20 @@ public class Paths : MonoBehaviour
                 continue;
             }
             //if the type of path is linear
-            if (pathtype == Type.linearPath)
-            {
+            
                 //if at the beginning
-                if (moveTo <= 0)
-                {
-                    //move forward
-                    moveDir = 1;
-                }
-                //check if at the end
-                else if (moveTo >= pathArr.Length - 1)
-                {
-                    //set to move back
-                    moveDir = -1;
-                }
+            if (moveTo <= 0)
+            {
+                //move forward
+                moveDir = 1;
             }
+            //check if at the end
+            else if (moveTo >= pathArr.Length - 1)
+            {
+                //set to move back
+                moveDir = -1;
+            }
+            
             //add direction to index to move to next point
             moveTo = moveTo + moveDir;
 
