@@ -4,7 +4,8 @@ using UnityEngine;
 public enum MoveType
 {
     moveTowardsPoint,
-    rotatePlatform
+    rotatePlatform,
+    breakablePlatform
 }
 public class PlatformController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PlatformController : MonoBehaviour
     public float distanceToPoint;
     private IEnumerator<Transform> pointInPath;
     bool playerOnPlat;
+    public Animator animator;
     void Start()
     {
         setUp();
@@ -28,6 +30,7 @@ public class PlatformController : MonoBehaviour
     }
     public void setUp()
     {
+        
         playerOnPlat = false;
         speed = 2.0f;
         rotationSpeed = 100.0f;
@@ -51,6 +54,10 @@ public class PlatformController : MonoBehaviour
     public void setTypeRotation()
     {
         moveType = MoveType.rotatePlatform;
+    }
+    public void setTypeBreakable()
+    {
+        moveType = MoveType.breakablePlatform;
     }
     public int getType()
     {
@@ -100,6 +107,29 @@ public class PlatformController : MonoBehaviour
         }
         
     }
+    public void PlatformBreak()
+    {
+        if (playerOnPlat == true)
+        {
+            animator.SetBool("Animate", true);
+            Game.OnBreakablePlat();
+            Renderer render = GetComponent<Renderer>();
+            render.material.color = Color.blue;
+            StartPlatformBreak();
+            
+        }
+    }
+    IEnumerator StartPlatformBreak()
+    {
+        yield return new WaitForSeconds(1.0f);
+        Game.breabablePlatDestroyed();
+        //Renderer render = GetComponent<Renderer>();
+        //render.material.color = Color.blue;
+        Destroy(gameObject);
+        
+    }
+
+
     public void MoveToward()
     {
         //using the move towards function then move to next point in path

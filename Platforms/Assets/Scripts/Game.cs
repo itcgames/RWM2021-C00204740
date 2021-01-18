@@ -7,6 +7,8 @@ public class Game : MonoBehaviour
 
     public bool playerOnPlat = false;
     public bool backToOriginalRotation = false;
+    public bool onBreakablePlatform = false;
+    public bool breakablePlatformDestroyed = false;
     public bool rotating = false;
     public bool obstacleGenerated = false;
 
@@ -33,6 +35,15 @@ public class Game : MonoBehaviour
     {
         instance.obstacleGenerated = true;
     }
+    public static void OnBreakablePlat()
+    {
+        instance.onBreakablePlatform = true;
+    }
+    public static void breabablePlatDestroyed()
+    {
+        instance.breakablePlatformDestroyed = true;
+    }
+
     public static void playerIsOnPlat()
     {
         instance.playerOnPlat = true;

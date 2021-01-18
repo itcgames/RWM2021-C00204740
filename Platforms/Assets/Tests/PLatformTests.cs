@@ -61,8 +61,6 @@ namespace Tests
         [UnityTest]
         public IEnumerator PlayerOnPlatform()
         {
-      
-
             game.GetPlatform().setTypeRotation();
             //wait for .5 secs and asset that the bool to check player was on platform was true
             yield return new WaitForSeconds(0.5f);
@@ -80,6 +78,32 @@ namespace Tests
             game.GetPlatform().PlatformRotation();
             Assert.True(game.backToOriginalRotation);
         }
-        
+
+        //[UnityTest]
+        //public IEnumerator BreakablePlatform()
+        //{
+
+        //    game.GetPlatform().setTypeBreakable();
+        //    game.GetPlatform().setUp();
+        //    //wait for 10 sec and assert that the bool to check if its at original rotation is true
+        //    yield return new WaitForSeconds(10.0f);
+
+        //    game.GetPlatform().PlatformBreak();
+        //    Assert.True(game.onBreakablePlatform);
+        //}
+
+        //[UnityTest]
+        //public IEnumerator BreakablePlatformDestroyed()
+        //{
+
+        //    game.GetPlatform().setTypeBreakable();
+        //    game.GetPlatform().setUp();
+        //    //wait for 10 sec and assert that the bool to check if its at original rotation is true
+        //    yield return new WaitForSeconds(10.0f);
+
+        //    game.GetPlatform().PlatformBreak();
+        //    Assert.True(game.breakablePlatformDestroyed);
+        //}
+
     }
 }
