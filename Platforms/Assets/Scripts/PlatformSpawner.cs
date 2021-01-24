@@ -6,7 +6,7 @@ public class PlatformSpawner : MonoBehaviour
 {
     
     public GameObject platform;
- 
+    public PlatformController platController;
     private int platformNumber;
     public int totalPlatformNumber;
     Transform child;
@@ -27,11 +27,14 @@ public class PlatformSpawner : MonoBehaviour
 
     public void spawnPlatform()
     {
-        child = gameObject.transform.GetChild(platformNumber);
-        float xPos = child.position.x;
-        float yPos = child.position.y;
-        Instantiate(platform, new Vector3(xPos, yPos, 0.0f), platform.transform.rotation);
-        platform.SetActive(true);
+        if (platController.PlatType() == 2)
+        {
+            child = gameObject.transform.GetChild(platformNumber);
+            float xPos = child.position.x;
+            float yPos = child.position.y;
+            Instantiate(platform, new Vector3(xPos, yPos, 0.0f), platform.transform.rotation);
+            platform.SetActive(true);
+        }
        
     }
 }

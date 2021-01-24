@@ -10,6 +10,7 @@ public class ObstacleGenerator : MonoBehaviour
     private int obstacleNumber;
     public int totalObstacleNumber;
     Transform child;
+    public PlatformController platController;
     private void Start()
     {
         SetUp();
@@ -27,12 +28,15 @@ public class ObstacleGenerator : MonoBehaviour
     }
     public void SpawnObstacle()
     {
-        Game.ObstacleGenerated();
-        child = gameObject.transform.GetChild(obstacleNumber);
-        float xPos = child.position.x;
-        float yPos = child.position.y + yOffset;
-        Instantiate(obstacle, new Vector3(xPos, yPos, 0.0f), obstacle.transform.rotation);
-        obstacle.SetActive(true);
+        if (platController.PlatType() == 1)
+        {
+            Game.ObstacleGenerated();
+            child = gameObject.transform.GetChild(obstacleNumber);
+            float xPos = child.position.x;
+            float yPos = child.position.y + yOffset;
+            Instantiate(obstacle, new Vector3(xPos, yPos, 0.0f), obstacle.transform.rotation);
+            obstacle.SetActive(true);
+        }
     }
  
     private void OnTriggerEnter2D(Collider2D collision)

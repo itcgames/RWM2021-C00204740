@@ -5,7 +5,8 @@ public enum MoveType
 {
     moveTowardsPoint,
     rotatePlatform,
-    breakablePlatform
+    breakablePlatform,
+    standardPlat
 }
 public class PlatformController : MonoBehaviour
 {
@@ -13,15 +14,19 @@ public class PlatformController : MonoBehaviour
     Quaternion startRotation;
     bool beginRotation;
     public MoveType moveType = MoveType.moveTowardsPoint;
-    int movementType = 0;
+    public int movementType = 0;
     public Paths path;
     //object speed
     public float speed;
     public float rotationSpeed;
     public float distanceToPoint;
     private IEnumerator<Transform> pointInPath;
-    bool playerOnPlat;
+    public bool playerOnPlat;
     public Animator animator;
+    public float time = 0.0f;
+    private Renderer render;
+    public bool startBreak = false;
+    public float breakableLifeTime;
     void Start()
     {
         setUp();
@@ -30,7 +35,8 @@ public class PlatformController : MonoBehaviour
     }
     public void setUp()
     {
-        
+        breakableLifeTime = 2.5f;
+        render = GetComponent<Renderer>();
         playerOnPlat = false;
         speed = 2.0f;
         rotationSpeed = 100.0f;
@@ -50,18 +56,17 @@ public class PlatformController : MonoBehaviour
     public void setTypeMove()
     {
         moveType = MoveType.moveTowardsPoint;
+        movementType = 1;
     }
     public void setTypeRotation()
     {
         moveType = MoveType.rotatePlatform;
+        movementType = 2;
     }
     public void setTypeBreakable()
     {
         moveType = MoveType.breakablePlatform;
-    }
-    public int getType()
-    {
-        return movementType;
+        movementType = 3;
     }
     void Update()
     {
@@ -70,17 +75,22 @@ public class PlatformController : MonoBehaviour
         {
             return;
         }
+        
         //The movement type is a move towards then call move towards function
         if (moveType == MoveType.moveTowardsPoint)
         {
-            movementType = 1;
+            movementType = 1; 
             MoveToward();
-           
         }
         if (moveType == MoveType.rotatePlatform)
         {
             movementType = 2;
             PlatformRotation();
+        }
+        if (moveType == MoveType.breakablePlatform)
+        {
+            movementType = 3;
+            PlatformBreak();
         }
 
     }
@@ -109,27 +119,23 @@ public class PlatformController : MonoBehaviour
     }
     public void PlatformBreak()
     {
-        if (playerOnPlat == true)
+       
+        if (startBreak == true)
         {
-            animator.SetBool("Animate", true);
             Game.OnBreakablePlat();
-            Renderer render = GetComponent<Renderer>();
-            render.material.color = Color.blue;
-            StartPlatformBreak();
-            
+            if (time < breakableLifeTime)
+            {
+                time += Time.deltaTime;
+                render.material.color = new Color(render.material.color.r, 
+                    render.material.color.g, render.material.color.b, time);
+            }
+            else
+            {
+                time = 0.0f;
+                Destroy(gameObject);
+            }
         }
     }
-    IEnumerator StartPlatformBreak()
-    {
-        yield return new WaitForSeconds(1.0f);
-        Game.breabablePlatDestroyed();
-        //Renderer render = GetComponent<Renderer>();
-        //render.material.color = Color.blue;
-        Destroy(gameObject);
-        
-    }
-
-
     public void MoveToward()
     {
         //using the move towards function then move to next point in path
@@ -149,29 +155,28 @@ public class PlatformController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            Renderer render = GetComponent<Renderer>();
-            render.material.color = Color.green;
+            startBreak = true;
             playerOnPlat = true;
             Game.playerIsOnPlat();
             if (moveType == MoveType.moveTowardsPoint)
             {
                 collision.transform.SetParent(transform);
-                
             }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            Renderer render = GetComponent<Renderer>();
-            render.material.color = Color.red;
             playerOnPlat = false;
             collision.transform.SetParent(null);
             Game.playerIsNotPlat();
-
         }
+    }
+    public int PlatType()
+    {
+        return movementType;
     }
 }
