@@ -35,7 +35,7 @@ public class PlatformController : MonoBehaviour
     }
     public void setUp()
     {
-        breakableLifeTime = 2.5f;
+        breakableLifeTime = 1.3f;
         render = GetComponent<Renderer>();
         playerOnPlat = false;
         speed = 2.0f;
@@ -122,19 +122,24 @@ public class PlatformController : MonoBehaviour
        
         if (startBreak == true)
         {
+            animator.SetBool("Animate", true);
             Game.OnBreakablePlat();
             if (time < breakableLifeTime)
             {
                 time += Time.deltaTime;
-                render.material.color = new Color(render.material.color.r, 
-                    render.material.color.g, render.material.color.b, time);
+                //render.material.color = new Color(render.material.color.r, 
+                //    render.material.color.g, render.material.color.b, time);
             }
             else
             {
-                time = 0.0f;
+                //time = 0.0f;
+                animator.SetBool("Animate", false);
                 Destroy(gameObject);
             }
         }
+
+
+
     }
     public void MoveToward()
     {
