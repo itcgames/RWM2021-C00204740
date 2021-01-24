@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MainExampleComponents.unity
+- path: Assets/Scenes/RotatePlatTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
